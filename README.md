@@ -1,7 +1,9 @@
 # CISP310
 Computer Architecture and Organization
+
 Recursive Sorted Linked-List Insertion
 C → Assembly Translation & Debugging
+
 Overview
 
 This project implements and debugs a low-level assembly translation of a recursive C program that inserts nodes into a singly linked list while maintaining sorted order. The original implementation is written in C and uses a pointer-to-pointer (Node **) parameter to correctly update the head pointer during recursive insertion.
@@ -12,13 +14,10 @@ Developed as part of coursework at American River College, this project emphasiz
 
 Project Objectives
 
-Translate recursive C logic into assembly while preserving program semantics
-
-Correctly implement pointer-to-pointer behavior at the assembly level
-
-Debug stack and pointer errors to ensure correct recursion and list updates
-
-Strengthen understanding of memory layout and function calling conventions
+-Translate recursive C logic into assembly while preserving program semantics
+-Correctly implement pointer-to-pointer behavior at the assembly level
+-Debug stack and pointer errors to ensure correct recursion and list updates
+-Strengthen understanding of memory layout and function calling conventions
 
 Design & Implementation
 
@@ -26,35 +25,26 @@ The original C function inserts a node into a sorted singly linked list by recur
 
 In the assembly translation, this behavior was recreated by:
 
-Manually managing stack frames for recursive calls
-
-Loading and dereferencing pointers to access node data and next pointers
-
-Implementing conditional branches to compare node values and determine insertion points
-
-Ensuring correct restoration of the stack and registers after each recursive return
+-Manually managing stack frames for recursive calls
+-Loading and dereferencing pointers to access node data and next pointers
+-Implementing conditional branches to compare node values and determine insertion points
+-Ensuring correct restoration of the stack and registers after each recursive return
 
 Multiple debugging iterations were required to resolve issues related to incorrect pointer loading, branching logic errors, and improper stack cleanup, all of which can cause subtle and difficult-to-trace failures at the assembly level.
 
 Key Concepts Demonstrated
 
-Recursive algorithms in low-level code
-
-Pointer-to-pointer manipulation
-
-Stack frame construction and teardown
-
-Assembly-level control flow and branching
-
-Debugging memory and pointer-related bugs
+-Recursive algorithms in low-level code
+-Pointer-to-pointer manipulation
+-Stack frame construction and teardown
+-Assembly-level control flow and branching
+-Debugging memory and pointer-related bugs
 
 Technologies Used
 
-C
-
-Assembly Language
-
-Low-level debugging techniques
+-C
+-Assembly Language
+-Low-level debugging techniques
 
 Learning Outcomes
 
